@@ -15,15 +15,19 @@ import {
   PlaceText,
   AttractionLabel,
   Content,
+  NowContainer,
+  NowText,
 } from './styles';
 
 const AgendaItem = ({ item }) => {
   const startDate = moment(item.startDate);
-  const enDate = moment(item.endDate);
-  const timeText = `${startDate.format('HH')}:${startDate.format('mm')}-${enDate.format('HH')}:${enDate.format('mm')}`;
+  const endDate = moment(item.endDate);
+  const timeText = `${startDate.format('HH')}:${startDate.format('mm')}-${endDate.format('HH')}:${endDate.format('mm')}`;
 
   return (
-    <Container>
+    <Container
+      inPast={moment().isAfter(endDate)}
+    >
       {
         item.attraction ?
           <AttractionLabel>Attraction</AttractionLabel>:
@@ -55,9 +59,16 @@ const AgendaItem = ({ item }) => {
             : null
         }
       </Content>
+      {
+        moment().isAfter(startDate) && moment().isBefore(endDate) ?
+          <NowContainer>
+            <NowText>Now</NowText>
+          </NowContainer> :
+          null
+      }
     </Container>
   );
-}
+};
 
 AgendaItem.propTypes = {
   item: PropTypes.shape({

@@ -3,6 +3,14 @@ import styled from 'styled-components/native';
 export const Container = styled.View`
   border-bottom-width: 1px;
   border-color: #dedede;
+  ${
+    props => 
+      props.inPast ? 
+      `
+        opacity: 0.6;
+        background-color: #E9E9E9;
+      ` : ''
+  };
 `;
 
 export const DateContainer = styled.View`
@@ -65,4 +73,19 @@ export const AttractionLabel = styled.Text`
 
 export const Content = styled.View`
   padding: 10px;
+`;
+
+export const NowContainer = styled.View`
+  background-color: #ff7626;
+  width: 50px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 10px;
+`;
+
+export const NowText = styled.Text`
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
 `;

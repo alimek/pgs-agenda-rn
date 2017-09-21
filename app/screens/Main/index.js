@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactNative from 'react-native';
 import { TabViewAnimated, TabBar, SceneMap } from 'react-native-tab-view';
+import moment from 'moment';
 
 import {
   Agenda,
@@ -30,23 +31,42 @@ class MainScreen extends Component {
     ]
   };
 
-  state = {
-    index: 1,
-    routes: [
-      {
-        key: 'friday',
-        title: 'Friday',
-      },
-      {
-        key: 'saturday',
-        title: 'Saturday',
-      },
-      {
-        key: 'sunday',
-        title: 'Sunday',
-      },
-    ],
-  };
+  constructor() {
+    super();
+
+    const now = moment();
+    let todayIndex = null;
+
+    switch (parseInt(now.format('D'), 10)) {
+      case 23:
+        todayIndex = 1;
+        break;
+      case 24:
+        todayIndex = 2;
+        break;
+      default:
+        todayIndex = 0;
+        break;
+    }
+
+    this.state = {
+      index: todayIndex,
+      routes: [
+        {
+          key: 'friday',
+          title: 'Friday',
+        },
+        {
+          key: 'saturday',
+          title: 'Saturday',
+        },
+        {
+          key: 'sunday',
+          title: 'Sunday',
+        },
+      ],
+    };
+  }
 
   handleIndexChange = index => this.setState({ index });
 
