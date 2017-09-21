@@ -19,6 +19,7 @@ export const NameText = styled.Text`
   font-size: 18px;
   font-weight: bold;
   margin-top: 3px;
+  padding-bottom: ${props => props.padding ? 5 : 0}px; 
 `;
 
 export const OwnerText = styled.Text`

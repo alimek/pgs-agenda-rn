@@ -36,7 +36,11 @@ const AgendaItem = ({ item }) => {
             <TimeText>{timeText}</TimeText>
           </TimeContainer>
         </DateContainer>
-        <NameText>{item.name}</NameText>
+        <NameText
+          padding={item.place || item.owner}
+        >
+          {item.name}
+        </NameText>
         {
           item.place ?
             <PlaceText>{item.place}</PlaceText>
