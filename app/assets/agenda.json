@@ -1,0 +1,140 @@
+{
+  "friday": [
+    {
+      "name": "Wyjazd",
+      "startDate": "2017-09-22T15:30:00+02:00",
+      "endDate": "2017-09-22T20:00+02:00"
+    },
+    {
+      "name": "Przyjazd i zakwaterowanie",
+      "startDate": "2017-09-22T20:00:00+02:00",
+      "endDate": "2017-09-22T21:30+02:00"
+    },
+    {
+      "name": "Kolacja",
+      "startDate": "2017-09-22T21:30:00+02:00",
+      "endDate": "2017-09-22T22:30:00+02:00",
+      "place": "Audytorium Maximum"
+
+    },
+    {
+      "name": "Integracja",
+      "startDate": "2017-09-22T22:30:00+02:00",
+      "endDate": "2017-09-23T03:00:00+02:00",
+      "place": "Audytorium Maximum"
+    }
+  ],
+  "saturday": [
+    {
+      "name": "Śniadanie",
+      "startDate": "2017-09-23T07:00:00+02:00",
+      "endDate": "2017-09-23T10:00:00+02:00",
+      "place": "Restauracja Starówka"
+    },
+    {
+      "name": "SPA, Basen",
+      "startDate": "2017-09-23T08:00:00+02:00",
+      "endDate": "2017-09-23T22:00:00+02:00",
+      "attraction": true
+    },
+    {
+      "name": "Lekcja golfa",
+      "startDate": "2017-09-23T08:30:00+02:00",
+      "endDate": "2017-09-23T14:00:00+02:00",
+      "attraction": true,
+      "owner": "Celina Minor"
+    },
+    {
+      "name": "Kajaki",
+      "startDate": "2017-09-23T09:45:00+02:00",
+      "endDate": "2017-09-23T14:00:00+02:00",
+      "attraction": true,
+      "owner": "Celina Minor"
+    },
+    {
+      "name": "Paintball - grupa 1",
+      "startDate": "2017-09-23T09:30:00+02:00",
+      "endDate": "2017-09-23T14:00:00+02:00",
+      "attraction": true,
+      "owner": "Celina Minor"
+    },
+    {
+      "name": "Paintball - grupa 2",
+      "startDate": "2017-09-23T11:00:00+02:00",
+      "endDate": "2017-09-23T12:30:00+02:00",
+      "attraction": true,
+      "owner": "Celina Minor"
+    },
+    {
+      "name": "Parowozownia w Skierniewicach",
+      "startDate": "2017-09-23T10:00:00+02:00",
+      "endDate": "2017-09-23T14:00:00+02:00",
+      "attraction": true,
+      "owner": "Celina Minor"
+    },
+    {
+      "name": "Arboretum rogowskie, alpinarium",
+      "startDate": "2017-09-23T10:00:00+02:00",
+      "endDate": "2017-09-23T14:00:00+02:00",
+      "attraction": true,
+      "owner": "Celina Minor"
+    },
+    {
+      "name": "Paintball - grupa 3",
+      "startDate": "2017-09-23T12:30:00+02:00",
+      "endDate": "2017-09-23T14:00:00+02:00",
+      "attraction": true,
+      "owner": "Celina Minor"
+    },
+    {
+      "name": "Park linowy Spider",
+      "startDate": "2017-09-23T10:00:00+02:00",
+      "endDate": "2017-09-23T13:30:00+02:00",
+      "attraction": true,
+      "owner": "Celina Minor"
+    },
+    {
+      "name": "Obiad",
+      "startDate": "2017-09-23T14:00:00+02:00",
+      "endDate": "2017-09-23T15:30:00+02:00",
+      "place": "Restauracja Starówka"
+    },
+    {
+      "name": "Gala Pracowników",
+      "startDate": "2017-09-23T16:30:00+02:00",
+      "endDate": "2017-09-23T17:30:00+02:00",
+      "place": "Sala Amfiteatralna"
+    },
+    {
+      "name": "Niespodzianka",
+      "startDate": "2017-09-23T17:30:00+02:00",
+      "endDate": "2017-09-23T19:00:00+02:00",
+      "place": "Sala Amfiteatralna"
+    },
+    {
+      "name": "Kolacja",
+      "startDate": "2017-09-23T20:00:00+02:00",
+      "endDate": "2017-09-23T21:00:00+02:00",
+      "place": "Audytorium Maximum"
+    },
+    {
+      "name": "Impreza z DJ'em",
+      "startDate": "2017-09-23T21:00:00+02:00",
+      "endDate": "2017-09-23T03:00:00+02:00",
+      "place": "Audytorium Maximum"
+    }
+  ],
+  "sunday": [
+    {
+      "name": "Śniadanie",
+      "startDate": "2017-09-24T07:00:00+02:00",
+      "endDate": "2017-09-25T09:30:00+02:00",
+      "place": "Restauracja Starówka"
+    },
+    {
+      "name": "Powrót",
+      "startDate": "2017-09-24T10:00:00+02:00",
+      "endDate": "2017-09-24T15:00:00+02:00",
+    }
+  ]
+}
