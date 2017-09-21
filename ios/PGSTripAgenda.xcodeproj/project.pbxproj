@@ -851,6 +851,7 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = F83XY5TCSS;
+						ProvisioningStyle = Automatic;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -1617,6 +1618,8 @@
 			baseConfigurationReference = 99E3A5C0E893E6732A12E8BB /* Pods-PGSTripAgenda.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = F83XY5TCSS;
@@ -1636,6 +1639,7 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = PGSTripAgenda;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1645,6 +1649,8 @@
 			baseConfigurationReference = D3DAA0BDA8456C6D39492412 /* Pods-PGSTripAgenda.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F83XY5TCSS;
 				HEADER_SEARCH_PATHS = (
@@ -1663,6 +1669,7 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = PGSTripAgenda;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
