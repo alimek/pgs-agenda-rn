@@ -16,6 +16,7 @@ export default () => Navigation.startSingleScreenApp({
       navBarTextColor: '#FFF',
       navBarBackgroundColor: '#ff7626',
       navBarNoBorder: true,
+      topBarElevationShadowEnabled: false,
     }
   }
 });
