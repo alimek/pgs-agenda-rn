@@ -75,8 +75,8 @@ export const Content = styled.View`
   padding: 10px;
 `;
 
-export const NowContainer = styled.View`
-  background-color: #ff7626;
+export const StatusContainer = styled.View`
+  background-color: ${props => props.isSoon ? 'rgba(255, 119, 38, 0.5)' :'#ff7626'};
   width: 50px;
   height: 20px;
   justify-content: center;
@@ -84,7 +84,7 @@ export const NowContainer = styled.View`
   border-top-right-radius: 10px;
 `;
 
-export const NowText = styled.Text`
+export const StatusText = styled.Text`
   color: white;
   font-size: 10px;
   font-weight: bold;

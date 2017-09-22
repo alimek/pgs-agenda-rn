@@ -15,9 +15,25 @@ import {
   PlaceText,
   AttractionLabel,
   Content,
-  NowContainer,
-  NowText,
+  StatusContainer,
+  StatusText,
 } from './styles';
+
+const isEventInNextHour = (startDate) => {
+  const now = moment();
+  const diff = startDate.diff(now, 'minutes');
+
+  return diff > 0 && diff < 60;
+};
+
+const showStatusContainer = (startDate, endDate) => {
+  const now = moment();
+
+  return (
+    now.isAfter(startDate) &&
+    now.isBefore(endDate)
+  ) || isEventInNextHour(startDate);
+};
 
 const AgendaItem = ({ item }) => {
   const startDate = moment(item.startDate);
@@ -60,10 +76,12 @@ const AgendaItem = ({ item }) => {
         }
       </Content>
       {
-        moment().isAfter(startDate) && moment().isBefore(endDate) ?
-          <NowContainer>
-            <NowText>Now</NowText>
-          </NowContainer> :
+          showStatusContainer(startDate, endDate) ?
+          <StatusContainer
+            isSoon={isEventInNextHour(startDate)}
+          >
+            <StatusText>{isEventInNextHour(startDate) ? 'Soon' : 'Now'}</StatusText>
+          </StatusContainer> :
           null
       }
     </Container>

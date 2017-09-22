@@ -10,26 +10,17 @@ import {
 
 import {
   MainContainer,
+  ImageContainer,
+  Image,
 } from './styles';
 
 const {
   Dimensions,
 } = ReactNative;
-const PGSLogo = require('../../assets/image/pgs-white.png');
 const AgendaData = require('../../assets/agenda.json');
+const PGSLogo = require('../../assets/image/pgs-white.png');
 
 class MainScreen extends Component {
-  static navigatorButtons = {
-    leftButtons: [
-      {
-        icon: PGSLogo,
-        disableIconTint: true,
-        id: 'fakeButton',
-        buttonColor: 'white',
-        disabled: true,
-      }
-    ]
-  };
 
   constructor() {
     super();
@@ -94,6 +85,11 @@ class MainScreen extends Component {
   render() {
     return (
       <MainContainer>
+        <ImageContainer>
+          <Image
+            source={PGSLogo}
+          />
+        </ImageContainer>
         <TabViewAnimated
           style={{ flex: 1 }}
           navigationState={this.state}
